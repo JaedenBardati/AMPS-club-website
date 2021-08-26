@@ -1,7 +1,50 @@
+/* General Styling */
 * { 
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
 pre {
     font-family: monospace;
+}
+
+b {
+    color: #7851a9;
+}
+
+
+/* AMPS welcome header */
+#amps-welcome-header .acronym-animation {
+    justify-content: center;
+    display:inline-block;
+    font-size: 50px;
+}
+
+#amps-welcome-header .acronym-animation b {
+    vertical-align: bottom;
+}
+
+#amps-welcome-header .acronym-animation span {
+    font-size: 60%; 
+    vertical-align:top;
+    vertical-align:middle;
+}
+
+
+/*  Animation for acronyms  */
+/*  Usage: A <div> with the class "acronym-animation" and <span>s inside.    */
+.acronym-animation {
+    overflow: hidden;
+    display: flex; 
+}
+
+.acronym-animation:hover span {
+    opacity: 1;
+}
+
+.acronym-animation span {
+    transition: all 0.3s ease-out;
+    width: 0;
+    opacity: 0;
+    display: inline-flex;
+    overflow: hidden;
 }
