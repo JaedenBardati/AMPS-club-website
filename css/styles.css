@@ -1,50 +1,79 @@
-/* General Styling */
-* { 
-    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+/* --------------- */
+/* GENERAL STYLING */
+/* --------------- */
+
+html {
+    position: relative;
+    min-height: 100%;
+    min-width: 550px;
 }
 
-pre {
-    font-family: monospace;
+body {
+    font-family: "Calibri Light", Calibri, sans-serif;
 }
 
-b {
-    color: #7851a9;
-}
-
-
-/* AMPS welcome header */
-#amps-welcome-header .acronym-animation {
-    justify-content: center;
-    display:inline-block;
-    font-size: 50px;
-}
-
-#amps-welcome-header .acronym-animation b {
-    vertical-align: bottom;
-}
-
-#amps-welcome-header .acronym-animation span {
-    font-size: 60%; 
-    vertical-align:top;
-    vertical-align:middle;
+.bishops-purple-text {
+    color: #4e2683;
 }
 
 
-/*  Animation for acronyms  */
-/*  Usage: A <div> with the class "acronym-animation" and <span>s inside.    */
-.acronym-animation {
-    overflow: hidden;
-    display: flex; 
+/* Header */
+.header {
+    background-color: #222;
+    border-bottom: 5px solid #4e2683;
 }
 
-.acronym-animation:hover span {
-    opacity: 1;
+.navbar-inner {
+    margin: 0 10px;
 }
 
-.acronym-animation span {
-    transition: all 0.3s ease-out;
-    width: 0;
-    opacity: 0;
-    display: inline-flex;
-    overflow: hidden;
+.nav-item {
+    padding: 0 10px;
+    margin:0 10px;
+    
+}
+
+.nav-link {
+    text-align: center;
+    font-size: 115%;
+}
+
+.active {
+    color: #ffd500;
+}
+
+
+.navbar-brand { /* image or text (at different sizes)*/
+    margin: 10px;
+}
+
+
+/* Content */
+.content {
+    margin:50px;
+    padding:25px;
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+/* ------------ */
+/* HOME content */
+/* ------------ */
+
+#home-content div h1 {
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+#home-content div h2 {
+    text-align: center;
+    padding: 5px;
+    margin: 10px 0;
 }
