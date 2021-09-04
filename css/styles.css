@@ -10,17 +10,33 @@ html {
 
 body {
     font-family: "Calibri Light", Calibri, sans-serif;
+    background-color: #ece8f0;
 }
 
 .bishops-purple-text {
-    color: #4e2683;
+    color: #4e2683; /* bishops purple */
+}
+
+a, a:visited {
+    color: #4e2683; /* bishops purple */
+}
+
+a:hover {
+    color: #763ab5; /* lighter bishops purple */
 }
 
 
 /* Header */
 .header {
     background-color: #222;
-    border-bottom: 5px solid #4e2683;
+    border-bottom: 5px solid #4e2683; /* bishops purple */
+    color: #cca135; /* golden */
+    
+    /*
+    position: fixed;
+    top:0;
+    width:100%;
+    /*-------- Uncomment above for fixed header (plus the margin in content below) ------- */
 }
 
 .navbar-inner {
@@ -30,7 +46,6 @@ body {
 .nav-item {
     padding: 0 10px;
     margin:0 10px;
-    
 }
 
 .nav-link {
@@ -38,22 +53,69 @@ body {
     font-size: 115%;
 }
 
-.active {
-    color: #ffd500;
+.nav-item a {
+    color: #836926; /* darker golden */
 }
 
+.nav-item a:hover {
+    color: #ffcb47; /* lighter golden */
+}
+
+.navbar-nav .active {
+    color: #cca135; /* golden */
+}
 
 .navbar-brand { /* image or text (at different sizes)*/
     margin: 10px;
     text-align: center;
 }
 
+.navbar-icon {
+    color: #cca135; /* golden */
+    text-align: center; 
+    text-justify: center; 
+    font-size: 140%;
+}
+
+.navbar-toggler {
+    border: 3px solid #836926;  /* darker golden */
+    border-radius: 10px;
+}
+
+.navbar-toggler:active {
+    border: 3px solid #cca135;  /* golden */
+    border-radius: 10px;
+}
+
+.navbar-nav {
+    /*border-top: 2px solid #3e1e63;
+    border-bottom: 2px solid #3e1e63;*/
+    margin: 5px 0;
+}
 
 /* Content */
 .content {
     margin:50px;
     padding:25px;
-    background: #fff;
+    background: #fff;   /* white */
+    
+    /*margin-top:215px; 
+    /*-------- Uncomment above for fixed header (plus, the stuff in .header) ------- */
+}
+
+.subcontent-group {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.subsubcontent {
+    margin: 10px;
+}
+
+p {
+    margin-bottom: 25px;
+    text-align: justify;
+    font-size:105%;
 }
 
 /* Footer */
@@ -61,7 +123,7 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: #eee;
+    background-color: #ece8f0;
 }
 
 
@@ -69,33 +131,47 @@ body {
 /* HOME content */
 /* ------------ */
 
-#home-content div h1 {
+#home-content div h1 {      /* Welcome to */
     text-align: center;
     padding: 5px;
+    margin-top: 50px;
     margin-bottom: 30px;
 }
 
-#home-content div h2 {
+#home-content div h2 {      /* BU's astronomy, mathematics and physics society!*/
     text-align: center;
     padding: 5px;
-    margin: 10px 0;
+    margin-top: 10px;
+    margin-bottom: 75px;
 }
 
 
-.home-meet-the-team-item {
+#home-meet-the-team .col {
     text-align: center;
-    
 }
 
 .home-meet-the-team-item div {
     padding: 5px;
 }
 
-.home-meet-the-team-item-header h5 {
-    font-weight: bolder;
+.home-meet-the-team-item-header h4 {
+    font-weight: normal;
+}
+
+.home-meet-the-team-item-subheader span {
+    font-weight: bold;
 }
 
 .home-meet-the-team-item-img img {
-    width: 200px;
+    margin:10px;
+}
+
+.home-meet-the-team-item-caption span {
+    font-style: italic;
+}
+
+.home-meet-the-team-item-img img, .home-meet-the-team-item-header h4, .home-meet-the-team-item-subheader span, .home-meet-the-team-item-caption span {
+    width: 300px;
+    text-align: start;
 }
 
