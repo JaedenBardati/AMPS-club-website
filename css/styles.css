@@ -45,6 +45,7 @@ body {
 
 .navbar-brand { /* image or text (at different sizes)*/
     margin: 10px;
+    text-align: center;
 }
 
 
@@ -52,13 +53,15 @@ body {
 .content {
     margin:50px;
     padding:25px;
+    background: #fff;
 }
 
 /* Footer */
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #eee;
 }
 
 
@@ -77,3 +80,22 @@ body {
     padding: 5px;
     margin: 10px 0;
 }
+
+
+.home-meet-the-team-item {
+    text-align: center;
+    
+}
+
+.home-meet-the-team-item div {
+    padding: 5px;
+}
+
+.home-meet-the-team-item-header h5 {
+    font-weight: bolder;
+}
+
+.home-meet-the-team-item-img img {
+    width: 200px;
+}
+
