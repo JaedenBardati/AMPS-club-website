@@ -17,7 +17,7 @@ body {
     color: #4e2683; /* bishops purple */
 }
 
-a, a:visited {
+a, a:link, a:visited, a:active {
     color: #4e2683; /* bishops purple */
 }
 
@@ -53,7 +53,7 @@ a:hover {
     font-size: 115%;
 }
 
-.nav-item a {
+.nav-item a, .nav-item a:visited {
     color: #836926; /* darker golden */
 }
 
@@ -61,7 +61,7 @@ a:hover {
     color: #ffcb47; /* lighter golden */
 }
 
-.navbar-nav .active {
+.navbar-nav .active, .navbar-nav .active:visited {
     color: #cca135; /* golden */
 }
 
@@ -174,4 +174,39 @@ p {
     width: 300px;
     text-align: start;
 }
+
+
+/* ----------------- */
+/* ASTRONOMY content */
+/* ----------------- */
+
+#astronomy-content {}
+
+
+/* ------------ */
+/* MATH content */
+/* ------------ */
+
+#math-content {}
+
+
+/* --------------- */
+/* PHYSICS content */
+/* --------------- */
+
+#physics-content {}
+
+
+/* -------------- */
+/* EVENTS content */
+/* -------------- */
+
+#events-content {}
+
+
+/* --------------- */
+/* CONTACT content */
+/* --------------- */
+
+#contact-content {}
 
