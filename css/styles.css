@@ -29,7 +29,7 @@ a:hover {
 /* Header */
 .header {
     background-color: #222;
-    border-bottom: 5px solid #4e2683; /* bishops purple */
+    border-bottom: 5px solid #553b52; /* amps purple */
     color: #cca135; /* golden */
     
     /*
@@ -58,11 +58,11 @@ a:hover {
 }
 
 .nav-item a:hover {
-    color: #ffcb47; /* lighter golden */
+    color: #e6bb47; /* lighter golden */
 }
 
 .navbar-nav .active, .navbar-nav .active:visited {
-    color: #cca135; /* golden */
+    color: #e6bb47; /* golden */
 }
 
 .navbar-brand { /* image or text (at different sizes)*/
@@ -71,7 +71,7 @@ a:hover {
 }
 
 .navbar-icon {
-    color: #cca135; /* golden */
+    color: #e6bb47; /* golden */
     text-align: center; 
     text-justify: center; 
     font-size: 140%;
@@ -103,6 +103,20 @@ a:hover {
     /*-------- Uncomment above for fixed header (plus, the stuff in .header) ------- */
 }
 
+.content-header h1 {
+    text-align: center;
+    padding: 5px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.content-header h2 {
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 75px;
+}
+
 .subcontent-group {
     margin-top: 50px;
     margin-bottom: 10px;
@@ -112,7 +126,7 @@ a:hover {
     margin: 10px;
 }
 
-p {
+.subsubcontent p {
     margin-bottom: 25px;
     text-align: justify;
     font-size:105%;
@@ -131,19 +145,7 @@ p {
 /* HOME content */
 /* ------------ */
 
-#home-content div h1 {      /* Welcome to */
-    text-align: center;
-    padding: 5px;
-    margin-top: 50px;
-    margin-bottom: 30px;
-}
-
-#home-content div h2 {      /* BU's astronomy, mathematics and physics society!*/
-    text-align: center;
-    padding: 5px;
-    margin-top: 10px;
-    margin-bottom: 75px;
-}
+#home-content {}
 
 
 #home-meet-the-team .col {
@@ -170,9 +172,14 @@ p {
     font-style: italic;
 }
 
-.home-meet-the-team-item-img img, .home-meet-the-team-item-header h4, .home-meet-the-team-item-subheader span, .home-meet-the-team-item-caption span {
+.home-meet-the-team-item-img img, .home-meet-the-team-item-header h4, .home-meet-the-team-item-subheader span, .home-meet-the-team-item-caption p {
     width: 300px;
     text-align: start;
+}
+
+.home-meet-the-team-item-caption p {
+    font-size: 100%;
+    text-align: justify;
 }
 
 
@@ -208,5 +215,13 @@ p {
 /* CONTACT content */
 /* --------------- */
 
-#contact-content {}
+#contact-content  {}
+
+#contact-content a {
+    text-decoration: none;
+}
+
+#contact-socialmedia * {
+    text-align: center;
+}
 
